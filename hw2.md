@@ -14,7 +14,7 @@ using namespace std;
 int main(int argc, char **argv)
 
 {
-    int initialseconds, initialminutes, initialhours, initialdays, initialyear, miles, seconds, minutes, hours, days, years; // variable declarations including conversion variables 
+    int initialseconds, initialminutes, initialhours, initialdays, initialyear, miles, seconds, minutes, hours, days, years; // variable declarations including conversion variables
     
     cout << "Please give me the time of travel in seconds. ";
     cin >> initialseconds; // User enters a positive integer here to represent seconds.
