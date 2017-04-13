@@ -29,7 +29,7 @@ int main(int argc, char **argv)
     
     // Prompt user to enter a positive integer to represent seconds.
     cout << "Please give me the time of travel in seconds. ";
-    cin >> initialseconds; 
+    cin >> initial_seconds; 
     
    // Prompt user to enter a positive integer to represent miles per hour. 
     cout << "Please give me your speed in miles per hour. ";
