@@ -14,36 +14,54 @@ using namespace std;
 int main(int argc, char **argv)
 
 {
-    int initialseconds, initialminutes, initialhours, initialdays, initialyear, miles, seconds, minutes, hours, days, years; // variable declarations including conversion variables
+    int initial_seconds,
+    initial_minutes,
+    initial_hours,
+    initial_days,
+    initial_year,
+    mph,
+    seconds,
+    minutes,
+    hours,
+    days,
+    years; // variable declarations including conversion variables
+   
     
+    // Prompt user to enter a positive integer to represent seconds.
     cout << "Please give me the time of travel in seconds. ";
-    cin >> initialseconds; // User enters a positive integer here to represent seconds.
+    cin >> initialseconds; 
     
+   // Prompt user to enter a positive integer to represent miles per hour. 
     cout << "Please give me your speed in miles per hour. ";
-    cin >> miles; // User enters a positive integer here to represent miles per hour.
+    cin >> mph; 
     
-    seconds = initialseconds % 60; // remainder of seconds
+    seconds = initial_seconds % 60; // remainder of seconds
     
-    initialminutes = initialseconds/ 60;
+    initial_minutes = initial_seconds / 60;
     
-    minutes = initialminutes % 60;
+    minutes = initial_minutes % 60;
     
-    initialhours = initialminutes / 60; // conversion from initial seconds to minutes to hours
+    initial_hours = initial_minutes / 60; // conversion from initial seconds to minutes to hours
     
-    hours = initialhours % 24;
+    hours = initial_hours % 24;
     
-    initialdays = initialhours/24;
+    initial_days = initial_hours / 24;
     
-    days = initialdays % 24; // remainder of days
+    days = initial_days % 24; // remainder of days
     
-    initialyear = initialdays/ 365;
+    initial_year = initial_days / 365;
     
-    years = initialyear % 365;
+    years = initial_year % 365;
     
     
-    cout << "You have been traveling for: " << "" << years << " years " << days<< " days "<< hours << " hours " << minutes << " minutes " << seconds <<" seconds. \n";
+    cout << "You have been traveling for: " << years << " years " 
+        << days << " days "
+        << hours << " hours " 
+        << minutes << " minutes " 
+        << seconds <<" seconds." << endl;
     
-    cout << "Your distance travelled is: " << ""<< miles * ((double) initialseconds/3600) << " miles.\n"; // cast a double in order to convert seconds to hours and determine total miles.
+    // convert seconds to hours and multiply by miles per hour to determine total miles travelled.
+    cout << "Your distance travelled is: " << ""<< mph * ((double) initial_seconds/3600) << " miles.\n"; 
     
     system("pause");
     return 0;
