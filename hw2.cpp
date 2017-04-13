@@ -58,10 +58,10 @@ int main(int argc, char **argv)
         << days << " days "
         << hours << " hours " 
         << minutes << " minutes " 
-        << seconds <<" seconds." << endl;
+        << seconds << " seconds." << endl;
     
     // convert seconds to hours and multiply by miles per hour to determine total miles travelled.
-    cout << "Your distance travelled is: " << ""<< mph * ((double) initial_seconds/3600) << " miles.\n"; 
+    cout << "Your distance travelled is: "<< mph * ((double) initial_seconds/3600) << " miles." << endl; 
     
     system("pause");
     return 0;
