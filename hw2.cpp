@@ -15,13 +15,13 @@ int main(int argc, const char * argv[])
 {
     int x,y;
     
-    string c1, c2;
+    string cat1, cat2;
     
     cout << "How many in the first category? ";
-    cin >> x >> c1 ;
+    cin >> x >> cat1 ;
     
     cout << "How many in the second category? ";
-    cin >> y >> c2;
+    cin >> y >> cat2;
     
     
     // Casting of integers to calculate ratio.
@@ -32,8 +32,8 @@ int main(int argc, const char * argv[])
     
     
     // Use substring to make ratio categories singular.
-    string category1 = c1.substr (0, (c1.length() - 1));
-    string category2 = c2.substr (0, (c2.length() - 1));
+    string category1 = cat1.substr (0, (cat1.length() - 1));
+    string category2 = cat2.substr (0, (cat2.length() - 1));
     
     string ratio_one = category1 + "-to-" + category2 + " ratio";
     string ratio_two = category2 + "-to-" + category1 + " ratio";
@@ -43,9 +43,9 @@ int main(int argc, const char * argv[])
     cout << setprecision(2);
     
     // Organize columns and output.
-    cout << setw(ratio_one.length()) << c1 << setw(10) << x << endl;
+    cout << setw(ratio_one.length()) << cat1 << setw(10) << x << endl;
     
-    cout << setw(ratio_one.length()) << c2 << setw(10) << y << endl;
+    cout << setw(ratio_one.length()) << cat2 << setw(10) << y << endl;
     
     cout << setw(ratio_one.length()) << ratio_one << setw(10) << cr1 << endl;
     
