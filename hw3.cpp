@@ -95,7 +95,7 @@ int ccc_win_main ( )
 						}
 
 						else {
-							// draw and 0 at the point (x,y)
+							// draw an O at the point (x,y)
 
 							draw_O(x, y);
 						}
