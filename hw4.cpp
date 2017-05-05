@@ -146,8 +146,8 @@ int ccc_win_main()
 	Point stop = cwin.get_mouse("Pick stopping location: ");
 
 	//call the animation with the supplied points
-	animate(50, 200, start, middle);
-	animate(50, 200, middle, stop);
+	animate(30, 200, start, middle);
+	animate(30, 200, middle, stop);
 
 	return 0;
 
