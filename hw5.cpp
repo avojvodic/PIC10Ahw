@@ -1,8 +1,9 @@
-// Homework 5: May 15, 2017
-// 
+//  
+// PIC 10A Homework 5
+//  May 15, 2017
+//
 // Aleksandra Vojvodic
 // Student ID: 904578899
-//
 //
 
 #include <iostream>
