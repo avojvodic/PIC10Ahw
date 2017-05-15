@@ -1,4 +1,4 @@
-  main.cpp
+
 //  April28HW3
 //
 //  Created by Aleksandra Vojvodic on 4/26/17.
